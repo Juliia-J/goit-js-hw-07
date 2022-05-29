@@ -9,13 +9,13 @@ const galleryContainer = document.querySelector(".gallery");
 
 function galleryListCreate(items) {
     return items.map(item =>
-`<a class="gallery__item" href="${item.original}">
+`<li><a class="gallery__item" href="${item.original}">
   <img
   class="gallery__image" src="${item.preview}"
   data-source="${item.original}" 
   alt="${item.description}"
   title="${item.description}" />
-</a>`).join("");
+</a></li>`).join("");
 }
 galleryContainer.innerHTML = galleryListCreate(galleryItems);
 
