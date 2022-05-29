@@ -29,7 +29,7 @@ function onImgClick(evt) {
         return;
     }
     const originImg = evt.target.dataset.source;
-    console.log(originImg);
+    // console.log(originImg);
 
     showBigImage(originImg); 
 }
